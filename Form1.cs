@@ -16,5 +16,42 @@ namespace CafeManagement
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if(txtUsername.Text == "test" && txtPassword.Text == "pass")
+            {
+                Dashboard ds = new Dashboard("Admin");
+                ds.Show();
+                this.Hide();
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Dashboard ds = new Dashboard("Guest");
+            ds.Show();
+            this.Hide();
+        }
     }
 }
