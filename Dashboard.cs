@@ -48,7 +48,8 @@ namespace CafeManagement
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-
+            uC_AddItems1.Visible = true;
+            uC_AddItems1.BringToFront();
         }
 
         private void guna2GradientCircleButton1_Click(object sender, EventArgs e)
@@ -64,6 +65,16 @@ namespace CafeManagement
         }
 
         private void uC_Welcome1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            uC_AddItems1.Visible = false;
+        }
+
+        private void uC_AddItems1_Load(object sender, EventArgs e)
         {
 
         }

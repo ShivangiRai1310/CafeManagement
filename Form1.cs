@@ -39,7 +39,7 @@ namespace CafeManagement
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            if(txtUsername.Text == "test" && txtPassword.Text == "pass")
+            if(txtUsername.Text == "" && txtPassword.Text == "")
             {
                 Dashboard ds = new Dashboard("Admin");
                 ds.Show();
@@ -52,6 +52,11 @@ namespace CafeManagement
             Dashboard ds = new Dashboard("Guest");
             ds.Show();
             this.Hide();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

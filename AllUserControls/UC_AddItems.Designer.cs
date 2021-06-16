@@ -29,6 +29,7 @@ namespace CafeManagement.AllUserControls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,6 +39,7 @@ namespace CafeManagement.AllUserControls
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -146,10 +148,11 @@ namespace CafeManagement.AllUserControls
             this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
+            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Location = new System.Drawing.Point(467, 352);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "";
@@ -163,6 +166,7 @@ namespace CafeManagement.AllUserControls
             this.btnAddItem.BorderRadius = 21;
             this.btnAddItem.CheckedState.Parent = this.btnAddItem;
             this.btnAddItem.CustomImages.Parent = this.btnAddItem;
+            this.btnAddItem.DisabledState.Parent = this.btnAddItem;
             this.btnAddItem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnAddItem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItem.ForeColor = System.Drawing.Color.White;
@@ -173,6 +177,7 @@ namespace CafeManagement.AllUserControls
             this.btnAddItem.Size = new System.Drawing.Size(180, 45);
             this.btnAddItem.TabIndex = 8;
             this.btnAddItem.Text = "Add Item";
+            this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
             // txtPrice
             // 
@@ -200,6 +205,11 @@ namespace CafeManagement.AllUserControls
             this.txtPrice.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.txtPrice.TabIndex = 9;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // UC_AddItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -216,6 +226,7 @@ namespace CafeManagement.AllUserControls
             this.Controls.Add(this.label1);
             this.Name = "UC_AddItems";
             this.Size = new System.Drawing.Size(781, 514);
+            this.Leave += new System.EventHandler(this.UC_AddItems_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +243,6 @@ namespace CafeManagement.AllUserControls
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2Button btnAddItem;
         private Guna.UI2.WinForms.Guna2TextBox txtPrice;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
