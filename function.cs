@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,20 +11,20 @@ namespace CafeManagement
 {
     class function
     {
-        protected SqlConnection getConnection()
+        protected MySqlConnection getConnection()
         {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = "server = localhost; database = cafe; userid = root; password = 12345;";
+            MySqlConnection con = new MySqlConnection();
+            con.ConnectionString = @"server=localhost;userid=root;database=cafe;port=3306;password=12345";
             return con;
         }
 
         public DataSet getData(String query)
         {
-            SqlConnection con = getConnection();
-            SqlCommand cmd = new SqlCommand();
+            MySqlConnection con = getConnection();
+            MySqlCommand cmd = new MySqlCommand();
             cmd.Connection = con;
             cmd.CommandText = query;
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
             DataSet ds = new DataSet();
             da.Fill(ds);
             return ds;
@@ -32,10 +32,10 @@ namespace CafeManagement
 
         public void setData(String query)
         {
-            SqlConnection con = getConnection();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
+            MySqlConnection con = getConnection();
             con.Open();
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
             cmd.CommandText = query;
             cmd.ExecuteNonQuery();
             con.Close();
