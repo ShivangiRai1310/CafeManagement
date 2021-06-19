@@ -53,5 +53,10 @@ namespace CafeManagement.AllUserControls
         {
             clearAll();
         }
+
+        private void UC_AddItems_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

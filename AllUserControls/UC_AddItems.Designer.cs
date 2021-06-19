@@ -40,6 +40,7 @@ namespace CafeManagement.AllUserControls
             this.btnAddItem = new Guna.UI2.WinForms.Guna2Button();
             this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -210,6 +211,10 @@ namespace CafeManagement.AllUserControls
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            // 
             // UC_AddItems
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -226,6 +231,7 @@ namespace CafeManagement.AllUserControls
             this.Controls.Add(this.label1);
             this.Name = "UC_AddItems";
             this.Size = new System.Drawing.Size(781, 514);
+            this.Load += new System.EventHandler(this.UC_AddItems_Load);
             this.Leave += new System.EventHandler(this.UC_AddItems_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -244,5 +250,6 @@ namespace CafeManagement.AllUserControls
         private Guna.UI2.WinForms.Guna2Button btnAddItem;
         private Guna.UI2.WinForms.Guna2TextBox txtPrice;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }
