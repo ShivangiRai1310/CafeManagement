@@ -40,16 +40,16 @@ namespace CafeManagement
             this.btnAddItems = new Guna.UI2.WinForms.Guna2Button();
             this.btnPlaceOrder = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_PlaceOrder1 = new CafeManagement.AllUserControls.UC_PlaceOrder();
+            this.uC_AddItems1 = new CafeManagement.AllUserControls.UC_AddItems();
+            this.uC_Welcome2 = new CafeManagement.AllUserControls.UC_Welcome();
+            this.uC_Welcome1 = new CafeManagement.AllUserControls.UC_Welcome();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
-            this.uC_PlaceOrder1 = new CafeManagement.AllUserControls.UC_PlaceOrder();
-            this.uC_AddItems1 = new CafeManagement.AllUserControls.UC_AddItems();
-            this.uC_Welcome2 = new CafeManagement.AllUserControls.UC_Welcome();
-            this.uC_Welcome1 = new CafeManagement.AllUserControls.UC_Welcome();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -201,6 +201,45 @@ namespace CafeManagement
             this.panel2.Size = new System.Drawing.Size(781, 514);
             this.panel2.TabIndex = 1;
             // 
+            // uC_PlaceOrder1
+            // 
+            this.uC_PlaceOrder1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.uC_PlaceOrder1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_PlaceOrder1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_PlaceOrder1.Location = new System.Drawing.Point(0, 0);
+            this.uC_PlaceOrder1.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_PlaceOrder1.Name = "uC_PlaceOrder1";
+            this.uC_PlaceOrder1.Size = new System.Drawing.Size(781, 514);
+            this.uC_PlaceOrder1.TabIndex = 3;
+            // 
+            // uC_AddItems1
+            // 
+            this.uC_AddItems1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.uC_AddItems1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_AddItems1.Location = new System.Drawing.Point(0, 0);
+            this.uC_AddItems1.Name = "uC_AddItems1";
+            this.uC_AddItems1.Size = new System.Drawing.Size(781, 514);
+            this.uC_AddItems1.TabIndex = 2;
+            this.uC_AddItems1.Load += new System.EventHandler(this.uC_AddItems1_Load);
+            // 
+            // uC_Welcome2
+            // 
+            this.uC_Welcome2.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.uC_Welcome2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_Welcome2.Location = new System.Drawing.Point(0, 0);
+            this.uC_Welcome2.Name = "uC_Welcome2";
+            this.uC_Welcome2.Size = new System.Drawing.Size(781, 514);
+            this.uC_Welcome2.TabIndex = 1;
+            // 
+            // uC_Welcome1
+            // 
+            this.uC_Welcome1.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.uC_Welcome1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_Welcome1.Location = new System.Drawing.Point(0, 0);
+            this.uC_Welcome1.Name = "uC_Welcome1";
+            this.uC_Welcome1.Size = new System.Drawing.Size(781, 514);
+            this.uC_Welcome1.TabIndex = 0;
+            // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 30;
@@ -246,45 +285,6 @@ namespace CafeManagement
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation1;
-            // 
-            // uC_PlaceOrder1
-            // 
-            this.uC_PlaceOrder1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.uC_PlaceOrder1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uC_PlaceOrder1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uC_PlaceOrder1.Location = new System.Drawing.Point(0, 0);
-            this.uC_PlaceOrder1.Margin = new System.Windows.Forms.Padding(4);
-            this.uC_PlaceOrder1.Name = "uC_PlaceOrder1";
-            this.uC_PlaceOrder1.Size = new System.Drawing.Size(781, 514);
-            this.uC_PlaceOrder1.TabIndex = 3;
-            // 
-            // uC_AddItems1
-            // 
-            this.uC_AddItems1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.uC_AddItems1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uC_AddItems1.Location = new System.Drawing.Point(0, 0);
-            this.uC_AddItems1.Name = "uC_AddItems1";
-            this.uC_AddItems1.Size = new System.Drawing.Size(781, 514);
-            this.uC_AddItems1.TabIndex = 2;
-            this.uC_AddItems1.Load += new System.EventHandler(this.uC_AddItems1_Load);
-            // 
-            // uC_Welcome2
-            // 
-            this.uC_Welcome2.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.uC_Welcome2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uC_Welcome2.Location = new System.Drawing.Point(0, 0);
-            this.uC_Welcome2.Name = "uC_Welcome2";
-            this.uC_Welcome2.Size = new System.Drawing.Size(781, 514);
-            this.uC_Welcome2.TabIndex = 1;
-            // 
-            // uC_Welcome1
-            // 
-            this.uC_Welcome1.BackColor = System.Drawing.Color.White;
-            this.guna2Transition1.SetDecoration(this.uC_Welcome1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.uC_Welcome1.Location = new System.Drawing.Point(0, 0);
-            this.uC_Welcome1.Name = "uC_Welcome1";
-            this.uC_Welcome1.Size = new System.Drawing.Size(781, 514);
-            this.uC_Welcome1.TabIndex = 0;
             // 
             // Dashboard
             // 
