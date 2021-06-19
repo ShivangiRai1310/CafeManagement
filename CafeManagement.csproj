@@ -60,11 +60,25 @@
     <Compile Include="AllUserControls\UC_AddItems.Designer.cs">
       <DependentUpon>UC_AddItems.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="AllUserControls\UC_PlaceOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="AllUserControls\UC_PlaceOrder.Designer.cs">
       <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
+=======
+    <Compile Include="AllUserControls\UC_RemoveItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControls\UC_RemoveItem.Designer.cs">
+      <DependentUpon>UC_RemoveItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllUserControls\UC_UpdateItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllUserControls\UC_UpdateItems.Designer.cs">
+      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
+>>>>>>> e20a3028a7c4403a9a76588a420198b602271233
     </Compile>
     <Compile Include="AllUserControls\UC_Welcome.cs">
       <SubType>UserControl</SubType>
@@ -92,8 +106,16 @@
     <EmbeddedResource Include="AllUserControls\UC_AddItems.resx">
       <DependentUpon>UC_AddItems.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="AllUserControls\UC_PlaceOrder.resx">
       <DependentUpon>UC_PlaceOrder.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="AllUserControls\UC_RemoveItem.resx">
+      <DependentUpon>UC_RemoveItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllUserControls\UC_UpdateItems.resx">
+      <DependentUpon>UC_UpdateItems.cs</DependentUpon>
+>>>>>>> e20a3028a7c4403a9a76588a420198b602271233
     </EmbeddedResource>
     <EmbeddedResource Include="AllUserControls\UC_Welcome.resx">
       <DependentUpon>UC_Welcome.cs</DependentUpon>

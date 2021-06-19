@@ -49,7 +49,16 @@ namespace CafeManagement
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+<<<<<<< HEAD
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+=======
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_UpdateItems1 = new CafeManagement.AllUserControls.UC_UpdateItems();
+            this.uC_AddItems1 = new CafeManagement.AllUserControls.UC_AddItems();
+            this.uC_Welcome2 = new CafeManagement.AllUserControls.UC_Welcome();
+            this.uC_Welcome1 = new CafeManagement.AllUserControls.UC_Welcome();
+            this.uC_RemoveItem1 = new CafeManagement.AllUserControls.UC_RemoveItem();
+>>>>>>> e20a3028a7c4403a9a76588a420198b602271233
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -143,6 +152,7 @@ namespace CafeManagement
             this.btnUpdate.Size = new System.Drawing.Size(195, 45);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Update Items";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAddItems
             // 
@@ -191,7 +201,12 @@ namespace CafeManagement
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+<<<<<<< HEAD
             this.panel2.Controls.Add(this.uC_PlaceOrder1);
+=======
+            this.panel2.Controls.Add(this.uC_RemoveItem1);
+            this.panel2.Controls.Add(this.uC_UpdateItems1);
+>>>>>>> e20a3028a7c4403a9a76588a420198b602271233
             this.panel2.Controls.Add(this.uC_AddItems1);
             this.panel2.Controls.Add(this.uC_Welcome2);
             this.panel2.Controls.Add(this.uC_Welcome1);
@@ -211,6 +226,24 @@ namespace CafeManagement
             this.uC_PlaceOrder1.Name = "uC_PlaceOrder1";
             this.uC_PlaceOrder1.Size = new System.Drawing.Size(781, 514);
             this.uC_PlaceOrder1.TabIndex = 3;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 30;
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 30;
+            this.guna2Elipse6.TargetControl = this.panel2;
+            // 
+            // uC_UpdateItems1
+            // 
+            this.uC_UpdateItems1.BackColor = System.Drawing.Color.White;
+            this.uC_UpdateItems1.Location = new System.Drawing.Point(0, 0);
+            this.uC_UpdateItems1.Name = "uC_UpdateItems1";
+            this.uC_UpdateItems1.Size = new System.Drawing.Size(781, 514);
+            this.uC_UpdateItems1.TabIndex = 3;
             // 
             // uC_AddItems1
             // 
@@ -240,6 +273,7 @@ namespace CafeManagement
             this.uC_Welcome1.Size = new System.Drawing.Size(781, 514);
             this.uC_Welcome1.TabIndex = 0;
             // 
+<<<<<<< HEAD
             // guna2Elipse1
             // 
             this.guna2Elipse1.BorderRadius = 30;
@@ -285,6 +319,15 @@ namespace CafeManagement
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.guna2Transition1.DefaultAnimation = animation1;
+=======
+            // uC_RemoveItem1
+            // 
+            this.uC_RemoveItem1.BackColor = System.Drawing.Color.White;
+            this.uC_RemoveItem1.Location = new System.Drawing.Point(0, 0);
+            this.uC_RemoveItem1.Name = "uC_RemoveItem1";
+            this.uC_RemoveItem1.Size = new System.Drawing.Size(781, 514);
+            this.uC_RemoveItem1.TabIndex = 4;
+>>>>>>> e20a3028a7c4403a9a76588a420198b602271233
             // 
             // Dashboard
             // 
@@ -325,7 +368,13 @@ namespace CafeManagement
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private AllUserControls.UC_AddItems uC_AddItems1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+<<<<<<< HEAD
         private AllUserControls.UC_PlaceOrder uC_PlaceOrder1;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+=======
+        private AllUserControls.UC_UpdateItems uC_UpdateItems1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private AllUserControls.UC_RemoveItem uC_RemoveItem1;
+>>>>>>> e20a3028a7c4403a9a76588a420198b602271233
     }
 }

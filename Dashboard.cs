@@ -46,7 +46,8 @@ namespace CafeManagement
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-
+            uC_RemoveItem1.Visible = true;
+            uC_RemoveItem1.BringToFront();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -75,12 +76,23 @@ namespace CafeManagement
         private void Dashboard_Load(object sender, EventArgs e)
         {
             uC_AddItems1.Visible = false;
+<<<<<<< HEAD
             uC_PlaceOrder1.Visible = false;
+=======
+            uC_UpdateItems1.Visible = false;
+            uC_RemoveItem1.Visible = false;
+>>>>>>> e20a3028a7c4403a9a76588a420198b602271233
         }
 
         private void uC_AddItems1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            uC_UpdateItems1.Visible = true;
+            uC_UpdateItems1.BringToFront();
         }
     }
 }
