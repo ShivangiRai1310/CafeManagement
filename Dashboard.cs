@@ -72,11 +72,18 @@ namespace CafeManagement
         private void Dashboard_Load(object sender, EventArgs e)
         {
             uC_AddItems1.Visible = false;
+            uC_UpdateItems1.Visible = false;
         }
 
         private void uC_AddItems1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            uC_UpdateItems1.Visible = true;
+            uC_UpdateItems1.BringToFront();
         }
     }
 }

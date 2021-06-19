@@ -42,9 +42,11 @@ namespace CafeManagement
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_AddItems1 = new CafeManagement.AllUserControls.UC_AddItems();
             this.uC_Welcome2 = new CafeManagement.AllUserControls.UC_Welcome();
             this.uC_Welcome1 = new CafeManagement.AllUserControls.UC_Welcome();
+            this.uC_UpdateItems1 = new CafeManagement.AllUserControls.UC_UpdateItems();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -133,6 +135,7 @@ namespace CafeManagement
             this.btnUpdate.Size = new System.Drawing.Size(195, 45);
             this.btnUpdate.TabIndex = 2;
             this.btnUpdate.Text = "Update Items";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAddItems
             // 
@@ -179,6 +182,7 @@ namespace CafeManagement
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_UpdateItems1);
             this.panel2.Controls.Add(this.uC_AddItems1);
             this.panel2.Controls.Add(this.uC_Welcome2);
             this.panel2.Controls.Add(this.uC_Welcome1);
@@ -207,6 +211,11 @@ namespace CafeManagement
             this.guna2Elipse4.BorderRadius = 30;
             this.guna2Elipse4.TargetControl = this.panel2;
             // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 30;
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
             // uC_AddItems1
             // 
             this.uC_AddItems1.BackColor = System.Drawing.Color.White;
@@ -231,6 +240,14 @@ namespace CafeManagement
             this.uC_Welcome1.Name = "uC_Welcome1";
             this.uC_Welcome1.Size = new System.Drawing.Size(781, 514);
             this.uC_Welcome1.TabIndex = 0;
+            // 
+            // uC_UpdateItems1
+            // 
+            this.uC_UpdateItems1.BackColor = System.Drawing.Color.White;
+            this.uC_UpdateItems1.Location = new System.Drawing.Point(0, 0);
+            this.uC_UpdateItems1.Name = "uC_UpdateItems1";
+            this.uC_UpdateItems1.Size = new System.Drawing.Size(781, 514);
+            this.uC_UpdateItems1.TabIndex = 3;
             // 
             // Dashboard
             // 
@@ -269,5 +286,7 @@ namespace CafeManagement
         private AllUserControls.UC_Welcome uC_Welcome2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private AllUserControls.UC_AddItems uC_AddItems1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private AllUserControls.UC_UpdateItems uC_UpdateItems1;
     }
 }
