@@ -16,6 +16,8 @@ namespace CafeManagement
             MySqlConnection con = new MySqlConnection();
             con.ConnectionString = @"server=localhost;userid=root;database=cafe;port=3306;password=12345";
             return con;
+            //+		ds	{System.Data.DataSet}	System.Data.DataSet
+
         }
 
         public DataSet getData(String query)

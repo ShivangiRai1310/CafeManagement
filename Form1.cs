@@ -12,6 +12,7 @@ namespace CafeManagement
 {
     public partial class Form1 : Form
     {
+        connect con = new connect();
         public Form1()
         {
             InitializeComponent();
