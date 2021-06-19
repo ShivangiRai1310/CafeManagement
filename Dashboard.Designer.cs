@@ -43,10 +43,12 @@ namespace CafeManagement
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_UpdateItems1 = new CafeManagement.AllUserControls.UC_UpdateItems();
             this.uC_AddItems1 = new CafeManagement.AllUserControls.UC_AddItems();
             this.uC_Welcome2 = new CafeManagement.AllUserControls.UC_Welcome();
             this.uC_Welcome1 = new CafeManagement.AllUserControls.UC_Welcome();
-            this.uC_UpdateItems1 = new CafeManagement.AllUserControls.UC_UpdateItems();
+            this.uC_RemoveItem1 = new CafeManagement.AllUserControls.UC_RemoveItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -182,6 +184,7 @@ namespace CafeManagement
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_RemoveItem1);
             this.panel2.Controls.Add(this.uC_UpdateItems1);
             this.panel2.Controls.Add(this.uC_AddItems1);
             this.panel2.Controls.Add(this.uC_Welcome2);
@@ -216,6 +219,19 @@ namespace CafeManagement
             this.guna2Elipse5.BorderRadius = 30;
             this.guna2Elipse5.TargetControl = this.panel2;
             // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 30;
+            this.guna2Elipse6.TargetControl = this.panel2;
+            // 
+            // uC_UpdateItems1
+            // 
+            this.uC_UpdateItems1.BackColor = System.Drawing.Color.White;
+            this.uC_UpdateItems1.Location = new System.Drawing.Point(0, 0);
+            this.uC_UpdateItems1.Name = "uC_UpdateItems1";
+            this.uC_UpdateItems1.Size = new System.Drawing.Size(781, 514);
+            this.uC_UpdateItems1.TabIndex = 3;
+            // 
             // uC_AddItems1
             // 
             this.uC_AddItems1.BackColor = System.Drawing.Color.White;
@@ -241,13 +257,13 @@ namespace CafeManagement
             this.uC_Welcome1.Size = new System.Drawing.Size(781, 514);
             this.uC_Welcome1.TabIndex = 0;
             // 
-            // uC_UpdateItems1
+            // uC_RemoveItem1
             // 
-            this.uC_UpdateItems1.BackColor = System.Drawing.Color.White;
-            this.uC_UpdateItems1.Location = new System.Drawing.Point(0, 0);
-            this.uC_UpdateItems1.Name = "uC_UpdateItems1";
-            this.uC_UpdateItems1.Size = new System.Drawing.Size(781, 514);
-            this.uC_UpdateItems1.TabIndex = 3;
+            this.uC_RemoveItem1.BackColor = System.Drawing.Color.White;
+            this.uC_RemoveItem1.Location = new System.Drawing.Point(0, 0);
+            this.uC_RemoveItem1.Name = "uC_RemoveItem1";
+            this.uC_RemoveItem1.Size = new System.Drawing.Size(781, 514);
+            this.uC_RemoveItem1.TabIndex = 4;
             // 
             // Dashboard
             // 
@@ -288,5 +304,7 @@ namespace CafeManagement
         private AllUserControls.UC_AddItems uC_AddItems1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
         private AllUserControls.UC_UpdateItems uC_UpdateItems1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private AllUserControls.UC_RemoveItem uC_RemoveItem1;
     }
 }
