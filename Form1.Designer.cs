@@ -148,7 +148,7 @@ namespace CafeManagement
             this.btnLogin.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btnLogin.CheckedState.Parent = this.btnLogin;
             this.btnLogin.CustomImages.Parent = this.btnLogin;
-            this.btnLogin.DisabledState.Parent = this.btnLogin;
+            //this.btnLogin.DisabledState.Parent = this.btnLogin;
             this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(221)))));
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;

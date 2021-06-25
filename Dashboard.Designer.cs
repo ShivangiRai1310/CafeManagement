@@ -30,7 +30,7 @@ namespace CafeManagement
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation5 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLogOut = new System.Windows.Forms.LinkLabel();
@@ -40,12 +40,6 @@ namespace CafeManagement
             this.btnAddItems = new Guna.UI2.WinForms.Guna2Button();
             this.btnPlaceOrder = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_PlaceOrder1 = new CafeManagement.AllUserControls.UC_PlaceOrder();
-            this.uC_RemoveItem1 = new CafeManagement.AllUserControls.UC_RemoveItem();
-            this.uC_UpdateItems1 = new CafeManagement.AllUserControls.UC_UpdateItems();
-            this.uC_AddItems1 = new CafeManagement.AllUserControls.UC_AddItems();
-            this.uC_Welcome2 = new CafeManagement.AllUserControls.UC_Welcome();
-            this.uC_Welcome1 = new CafeManagement.AllUserControls.UC_Welcome();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -54,6 +48,14 @@ namespace CafeManagement
             this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse7 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Transition1 = new Guna.UI2.WinForms.Guna2Transition();
+            this.guna2Elipse8 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_PlaceOrder2 = new CafeManagement.AllUserControls.UC_PlaceOrder();
+            this.uC_PlaceOrder1 = new CafeManagement.AllUserControls.UC_PlaceOrder();
+            this.uC_RemoveItem1 = new CafeManagement.AllUserControls.UC_RemoveItem();
+            this.uC_UpdateItems1 = new CafeManagement.AllUserControls.UC_UpdateItems();
+            this.uC_AddItems1 = new CafeManagement.AllUserControls.UC_AddItems();
+            this.uC_Welcome2 = new CafeManagement.AllUserControls.UC_Welcome();
+            this.uC_Welcome1 = new CafeManagement.AllUserControls.UC_Welcome();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -92,7 +94,7 @@ namespace CafeManagement
             this.btnExit.CheckedState.Parent = this.btnExit;
             this.btnExit.CustomImages.Parent = this.btnExit;
             this.guna2Transition1.SetDecoration(this.btnExit, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btnExit.DisabledState.Parent = this.btnExit;
+            //this.btnExit.DisabledState.Parent = this.btnExit;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.HoverState.Parent = this.btnExit;
@@ -114,7 +116,7 @@ namespace CafeManagement
             this.btnRemove.CheckedState.Parent = this.btnRemove;
             this.btnRemove.CustomImages.Parent = this.btnRemove;
             this.guna2Transition1.SetDecoration(this.btnRemove, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btnRemove.DisabledState.Parent = this.btnRemove;
+            //this.btnRemove.DisabledState.Parent = this.btnRemove;
             this.btnRemove.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnRemove.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemove.ForeColor = System.Drawing.Color.White;
@@ -136,7 +138,7 @@ namespace CafeManagement
             this.btnUpdate.CheckedState.Parent = this.btnUpdate;
             this.btnUpdate.CustomImages.Parent = this.btnUpdate;
             this.guna2Transition1.SetDecoration(this.btnUpdate, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btnUpdate.DisabledState.Parent = this.btnUpdate;
+            //this.btnUpdate.DisabledState.Parent = this.btnUpdate;
             this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
@@ -158,7 +160,7 @@ namespace CafeManagement
             this.btnAddItems.CheckedState.Parent = this.btnAddItems;
             this.btnAddItems.CustomImages.Parent = this.btnAddItems;
             this.guna2Transition1.SetDecoration(this.btnAddItems, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btnAddItems.DisabledState.Parent = this.btnAddItems;
+            //this.btnAddItems.DisabledState.Parent = this.btnAddItems;
             this.btnAddItems.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnAddItems.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItems.ForeColor = System.Drawing.Color.White;
@@ -180,7 +182,7 @@ namespace CafeManagement
             this.btnPlaceOrder.CheckedState.Parent = this.btnPlaceOrder;
             this.btnPlaceOrder.CustomImages.Parent = this.btnPlaceOrder;
             this.guna2Transition1.SetDecoration(this.btnPlaceOrder, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.btnPlaceOrder.DisabledState.Parent = this.btnPlaceOrder;
+            //this.btnPlaceOrder.DisabledState.Parent = this.btnPlaceOrder;
             this.btnPlaceOrder.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnPlaceOrder.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlaceOrder.ForeColor = System.Drawing.Color.White;
@@ -196,6 +198,7 @@ namespace CafeManagement
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.uC_PlaceOrder2);
             this.panel2.Controls.Add(this.uC_PlaceOrder1);
             this.panel2.Controls.Add(this.uC_RemoveItem1);
             this.panel2.Controls.Add(this.uC_UpdateItems1);
@@ -208,6 +211,78 @@ namespace CafeManagement
             this.panel2.Size = new System.Drawing.Size(781, 514);
             this.panel2.TabIndex = 1;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 30;
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.BorderRadius = 30;
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.BorderRadius = 30;
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.BorderRadius = 30;
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.BorderRadius = 30;
+            this.guna2Elipse6.TargetControl = this.panel2;
+            // 
+            // guna2Elipse7
+            // 
+            this.guna2Elipse7.BorderRadius = 30;
+            this.guna2Elipse7.TargetControl = this.panel2;
+            // 
+            // guna2Transition1
+            // 
+            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
+            this.guna2Transition1.Cursor = null;
+            animation5.AnimateOnlyDifferences = true;
+            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
+            animation5.LeafCoeff = 0F;
+            animation5.MaxTime = 1F;
+            animation5.MinTime = 0F;
+            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
+            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
+            animation5.MosaicSize = 0;
+            animation5.Padding = new System.Windows.Forms.Padding(0);
+            animation5.RotateCoeff = 0F;
+            animation5.RotateLimit = 0F;
+            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
+            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
+            animation5.TimeCoeff = 0F;
+            animation5.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation5;
+            // 
+            // guna2Elipse8
+            // 
+            this.guna2Elipse8.BorderRadius = 30;
+            this.guna2Elipse8.TargetControl = this.panel2;
+            // 
+            // uC_PlaceOrder2
+            // 
+            this.uC_PlaceOrder2.BackColor = System.Drawing.Color.White;
+            this.guna2Transition1.SetDecoration(this.uC_PlaceOrder2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.uC_PlaceOrder2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uC_PlaceOrder2.Location = new System.Drawing.Point(443, 86);
+            this.uC_PlaceOrder2.Margin = new System.Windows.Forms.Padding(4);
+            this.uC_PlaceOrder2.Name = "uC_PlaceOrder2";
+            this.uC_PlaceOrder2.Size = new System.Drawing.Size(19, 29);
+            this.uC_PlaceOrder2.TabIndex = 6;
+            // 
             // uC_PlaceOrder1
             // 
             this.uC_PlaceOrder1.BackColor = System.Drawing.Color.White;
@@ -216,7 +291,7 @@ namespace CafeManagement
             this.uC_PlaceOrder1.Location = new System.Drawing.Point(0, 0);
             this.uC_PlaceOrder1.Margin = new System.Windows.Forms.Padding(4);
             this.uC_PlaceOrder1.Name = "uC_PlaceOrder1";
-            this.uC_PlaceOrder1.Size = new System.Drawing.Size(781, 514);
+            this.uC_PlaceOrder1.Size = new System.Drawing.Size(1014, 524);
             this.uC_PlaceOrder1.TabIndex = 5;
             // 
             // uC_RemoveItem1
@@ -265,62 +340,6 @@ namespace CafeManagement
             this.uC_Welcome1.Size = new System.Drawing.Size(781, 514);
             this.uC_Welcome1.TabIndex = 0;
             // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 30;
-            this.guna2Elipse2.TargetControl = this.panel2;
-            // 
-            // guna2Elipse3
-            // 
-            this.guna2Elipse3.BorderRadius = 30;
-            this.guna2Elipse3.TargetControl = this.panel2;
-            // 
-            // guna2Elipse4
-            // 
-            this.guna2Elipse4.BorderRadius = 30;
-            this.guna2Elipse4.TargetControl = this.panel2;
-            // 
-            // guna2Elipse5
-            // 
-            this.guna2Elipse5.BorderRadius = 30;
-            this.guna2Elipse5.TargetControl = this.panel2;
-            // 
-            // guna2Elipse6
-            // 
-            this.guna2Elipse6.BorderRadius = 30;
-            this.guna2Elipse6.TargetControl = this.panel2;
-            // 
-            // guna2Elipse7
-            // 
-            this.guna2Elipse7.BorderRadius = 30;
-            this.guna2Elipse7.TargetControl = this.panel2;
-            // 
-            // guna2Transition1
-            // 
-            this.guna2Transition1.AnimationType = Guna.UI2.AnimatorNS.AnimationType.HorizSlide;
-            this.guna2Transition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation1;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -366,5 +385,7 @@ namespace CafeManagement
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse7;
         private AllUserControls.UC_PlaceOrder uC_PlaceOrder1;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse8;
+        private AllUserControls.UC_PlaceOrder uC_PlaceOrder2;
     }
 }

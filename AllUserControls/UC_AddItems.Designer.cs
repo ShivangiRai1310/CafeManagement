@@ -166,7 +166,7 @@ namespace CafeManagement.AllUserControls
             this.btnAddItem.BorderRadius = 21;
             this.btnAddItem.CheckedState.Parent = this.btnAddItem;
             this.btnAddItem.CustomImages.Parent = this.btnAddItem;
-            this.btnAddItem.DisabledState.Parent = this.btnAddItem;
+            //this.btnAddItem.DisabledState.Parent = this.btnAddItem;
             this.btnAddItem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(225)))));
             this.btnAddItem.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddItem.ForeColor = System.Drawing.Color.White;

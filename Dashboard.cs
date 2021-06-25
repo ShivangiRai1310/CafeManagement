@@ -91,5 +91,10 @@ namespace CafeManagement
             uC_UpdateItems1.Visible = true;
             uC_UpdateItems1.BringToFront();
         }
+
+        private void uC_PlaceOrder3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
