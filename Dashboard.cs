@@ -26,12 +26,14 @@ namespace CafeManagement
                 btnAddItems.Hide();
                 btnUpdate.Hide();
                 btnRemove.Hide();
+                btnManageEmployee.Hide();
             }
             else if (user == "Admin")
             {
                 btnAddItems.Show();
                 btnUpdate.Show();
                 btnRemove.Show();
+                btnManageEmployee.Show();
             }
         }
 
@@ -79,6 +81,7 @@ namespace CafeManagement
             uC_UpdateItems1.Visible = false;
             uC_RemoveItem1.Visible = false;
             uC_PlaceOrder1.Visible = false;
+            uC_ManageEmployee1.Visible = false;
         }
 
         private void uC_AddItems1_Load(object sender, EventArgs e)
@@ -95,6 +98,12 @@ namespace CafeManagement
         private void uC_PlaceOrder3_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            uC_ManageEmployee1.Visible = true;
+            uC_ManageEmployee1.BringToFront();
         }
     }
 }

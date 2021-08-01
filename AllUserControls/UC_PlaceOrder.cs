@@ -145,6 +145,30 @@ namespace CafeManagement.AllUserControls
             labelTotalAmount.Text = "Rs. " + total;
         }
 
+        private void btnAddOrder_Click(object sender, EventArgs e)
+        {
+            query = "insert into orders (name, category, price, quantity, total) values ('" + txtItemName.Text + "','" + comboCategory.Text + "','" + txtPrice.Text + "','" + txtQuantityUpDown.Text + "','" + total + "')";
+            fn.setData(query);
+            clearAll();  
+        }
+
+        public void clearAll()
+        {
+            comboCategory.SelectedIndex = -1;
+            txtItemName.Clear();
+            txtPrice.Clear();
+            txtQuantityUpDown.ResetText();
+            txtTotal.Clear();
+            total = 0;
+            labelTotalAmount.Text = "Rs. " + total;
+            //guna2DataGridView2.Rows.RemoveAt(this.guna2DataGridView2.SelectedRows[0].Index);
+        }
+
+        private void labelTotalAmount_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
             if(txtTotal.Text != "0"&& txtTotal.Text != "")
